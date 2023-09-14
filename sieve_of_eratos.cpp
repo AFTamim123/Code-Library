@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> prime;
+vector<long long> prime;
 int mark[10000002];
 void siv() {
     long long n = 10000000;
