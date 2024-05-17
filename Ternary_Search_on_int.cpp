@@ -54,6 +54,27 @@ int32_t main() {
     return 0;
 }
 
+// For maximum
+    while (hi-lo>4) {
+            int m1 = (hi+lo)>>1LL;
+            int m2 = m1 + 1;
+
+            int a1 = f(m1);
+            int a2 = f(m2);
+
+            if(a1>a2) hi = m1;
+            else lo = m2;
+    }
+    for (int i = lo-4; i <= hi+4; i++)
+    {
+        ans = max(ans, f(i) );
+    }
+
+
+
+
+
 // https://codeforces.com/blog/entry/60702
 // https://atcoder.jp/contests/abc102/tasks/arc100_a
 // https://codeforces.com/contest/1520/problem/E
+// https://codeforces.com/contest/1933/problem/E
